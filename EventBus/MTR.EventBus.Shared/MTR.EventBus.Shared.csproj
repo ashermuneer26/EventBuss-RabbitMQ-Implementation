@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="6.2.0" />
+    <PackageReference Include="MassTransit.CastleWindsor" Version="6.2.0" />        
+    <PackageReference Include="MassTransit" Version="6.2.0" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.2.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SharedModules\BaseModule\BaseModule.csproj" />
+    <ProjectReference Include="..\..\Loggers\SeriLogger\SeriLogger.csproj" />
+    <ProjectReference Include="..\..\..\AdvantageControl.Core\AdvantageControl.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HostedServices\" />
+    <Folder Include="Quartz\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+</Project>

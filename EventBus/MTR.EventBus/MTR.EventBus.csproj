@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+      
+  <ItemGroup>
+    <ProjectReference Include="..\..\SharedModules\BaseModule\BaseModule.csproj" />
+    <ProjectReference Include="..\..\..\AdvantageControl.Core\AdvantageControl.Core.csproj" />
+    <ProjectReference Include="..\..\..\AdvantageControl.EntityFrameworkCore\AdvantageControl.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\MTR.EventBus.Shared\MTR.EventBus.Shared.csproj" />
+  </ItemGroup>
+</Project>
