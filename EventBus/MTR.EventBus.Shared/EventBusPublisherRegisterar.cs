@@ -1,6 +1,5 @@
 ﻿using System;
 using Abp.Dependency;
-using BaseModule.Configurations;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

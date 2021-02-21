@@ -1,0 +1,4 @@
+D:\Projects\EventBuss-RabbitMQ-Implementation\EventBus\MTR.EventBus.Shared\obj\Debug\netcoreapp3.1\MTR.EventBus.Shared.csprojAssemblyReference.cache
+D:\Projects\EventBuss-RabbitMQ-Implementation\EventBus\MTR.EventBus.Shared\obj\Debug\netcoreapp3.1\MTR.EventBus.Shared.AssemblyInfoInputs.cache
+D:\Projects\EventBuss-RabbitMQ-Implementation\EventBus\MTR.EventBus.Shared\obj\Debug\netcoreapp3.1\MTR.EventBus.Shared.AssemblyInfo.cs
+D:\Projects\EventBuss-RabbitMQ-Implementation\EventBus\MTR.EventBus.Shared\obj\Debug\netcoreapp3.1\MTR.EventBus.Shared.csproj.CoreCompileInputs.cache

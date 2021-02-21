@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using Abp.Dependency;
 using Abp.Runtime.Session;
-using AdvantageControl.Configuration;
 using Castle.Core.Logging;
 using MassTransit;
 using Microsoft.Extensions.Configuration;
@@ -10,7 +9,7 @@ using MTR.EventBus.Shared.Contracts;
 
 namespace MTR.EventBus.Shared.Consumers
 {
-    public class EmailSentConsumer : IConsumer<IEmailSentContract>
+    public class EmailSentConsumer : IConsumer<IUserEmailVerificationContract>
     {
         private readonly IAbpSession _abpSession;
         private readonly IConfigurationRoot _appConfiguration;
@@ -18,10 +17,10 @@ namespace MTR.EventBus.Shared.Consumers
         public EmailSentConsumer(IAbpSession abpSession)
         {
             _abpSession = abpSession;
-            _appConfiguration = AppConfigurations.Get(AppContext.BaseDirectory, null, false);
+            //_appConfiguration = AppConfigurations.Get(AppContext.BaseDirectory, null, false);
         }
 
-        public Task Consume(ConsumeContext<IEmailSentContract> context)
+        public Task Consume(ConsumeContext<IUserEmailVerificationContract> context)
         {
             using (_abpSession.Use(context.Message.TenantId, null))
             {

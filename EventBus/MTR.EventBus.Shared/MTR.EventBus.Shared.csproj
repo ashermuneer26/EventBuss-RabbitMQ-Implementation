@@ -11,12 +11,6 @@
     <PackageReference Include="MassTransit.RabbitMQ" Version="6.2.0" />
     <PackageReference Include="RabbitMQ.Client" Version="5.1.2" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\SharedModules\BaseModule\BaseModule.csproj" />
-    <ProjectReference Include="..\..\Loggers\SeriLogger\SeriLogger.csproj" />
-    <ProjectReference Include="..\..\..\AdvantageControl.Core\AdvantageControl.Core.csproj" />
-  </ItemGroup>
   <ItemGroup>
     <Folder Include="HostedServices\" />
     <Folder Include="Quartz\" />
